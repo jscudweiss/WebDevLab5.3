@@ -1,0 +1,22 @@
+:root {
+    /* CSS HEX */
+    --imperial-red: #e63946ff;
+    --honeydew: #f1faeeff;
+    --powder-blue: #a8dadcff;
+    --celadon-blue: #457b9dff;
+    --prussian-blue: #1d3557ff;
+}
+
+.even_car{
+    background-color: var(--honeydew)!important;
+    transition: background-color 0.5s ease;
+}
+.odd_car{
+    background-color: var(--powder-blue)!important;
+    transition: background-color 0.5s ease;
+}
+
+p{
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--prussian-blue);
+}
