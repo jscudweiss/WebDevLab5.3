@@ -21,7 +21,7 @@
           rel="stylesheet">
 
     <!--    fontawesome-->
-    <script src="https://kit.fontawesome.com/e5b5eed843.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/44afa46afd.js" crossorigin="anonymous"></script>
 
     <!--    Google jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -30,30 +30,49 @@
 <div id="car_section" class="col-9">
     <div id="car_grid" class="row">
         <div class="row" id="car_grid_container">
-            <div class="col-md-3 imgDiv">
-                <div class="card" style="width: 100%;">
-                    <img src=https://img2.carmax.com/img/vehicles/19913071/1.jpg?width=800 class="card-img-top"
-                         alt="...">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-5" id="carData">
-                                <p>Make</p>
-                                <p>Model</p>
-                                <p>Year</p>
-                                <p>Price</p>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-s-12 imgDiv" style="margin-bottom: 1rem">
+                <div class="card" style="width: 100%;" >
+                    <div class="card" style="width: 98%; margin-left: 1%; margin-bottom: 1%; margin-top: 2%;" >
+                        <img src="https://img2.carmax.com/img/vehicles/19913071/1.jpg?width=800" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>Make</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="make">Toyota</p>
+                                </div>
                             </div>
-                            <div class="col-5" id="carInfo">
-                                <p>${car.make}</p>
-                                <p>${car.model}</p>
-                                <p>${car.year}</p>
-                                <p>${car.price}</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>Model</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="model">Corolla</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>Year</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="year">2015</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>Price</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="price">$14715</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-primary">Left</button>
-                        <button type="button" class="btn btn-primary">Middle</button>
-                        <button type="button" class="btn btn-primary">Right</button>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary UpVote" value="false"><i class="fa-solid fa-thumbs-up"></i></button>
+                            <button type="button" class="btn btn-secondary DownVote" value="false"><i class="fa-solid fa-thumbs-down"></i></button>
+                            <button type="button" class="btn btn-danger Delete"><i class="fa-solid fa-trash"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
