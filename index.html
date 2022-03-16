@@ -26,14 +26,19 @@
     <!--    Google jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="javascript/data100.js" defer></script>
+    <script src="javascript/data10.js" defer></script>
     <script src="javascript/script.js" defer></script>
 </head>
 <body class="container">
-
-<section id="header_section">
-    <h1>Used Cars</h1>
-</section>
+<div class="row">
+    <div class="col-3" id="header_section">
+        <section>
+            <h1>Used Cars</h1>
+        </section>
+    </div>
+    <div class="col-9" id="carHead_section">
+    </div>
+</div>
 <div class="row">
     <div id="selection_section" class="col-3">
         <!-- search box-->
@@ -48,7 +53,7 @@
             <h5>Filter</h5>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="like_dislikes" id="all_cars" value="all"
-                       onclick="allCars()"
+                       onclick="CheckBox(0)"
                        checked>
                 <label class="form-check-label" for="all_cars">
                     All cars
@@ -56,14 +61,14 @@
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="like_dislikes" id="all_likes" value="like"
-                       onclick="likeCars()">
+                       onclick="CheckBox(1)">
                 <label class="form-check-label" for="all_likes">
                     Likes
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="like_dislikes" id="all_dislikes" value="dislike"
-                       onclick="dislikeCars()">
+                       onclick="CheckBox(2)">
                 <label class="form-check-label" for="all_dislikes">
                     Dislikes
                 </label>
@@ -85,9 +90,10 @@
     <div id="car_section" class="col-9">
         <div id="car_grid" class="row">
             <div class="col-xl-3 col-lg-4 col-md-6 col-s-12 imgDiv" style="margin-bottom: 1rem">
-                <div class="card" style="width: 100%;" >
-                    <div class="card" style="width: 98%; margin-left: 1%; margin-bottom: 1%; margin-top: 2%;" >
-                        <img src="https://img2.carmax.com/img/vehicles/19913071/1.jpg?width=800" class="card-img-top" alt="...">
+                <div class="card" style="width: 100%;">
+                    <div class="card" style="width: 98%; margin-left: 1%; margin-bottom: 1%; margin-top: 2%;">
+                        <img src="https://img2.carmax.com/img/vehicles/19913071/1.jpg?width=800" class="card-img-top"
+                             alt="...">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-6">
@@ -123,9 +129,12 @@
                             </div>
                         </div>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary UpVote" value="false"><i class="fa-solid fa-thumbs-up"></i></button>
-                            <button type="button" class="btn btn-secondary DownVote" value="false"><i class="fa-solid fa-thumbs-down"></i></button>
-                            <button type="button" class="btn btn-danger Delete"><i class="fa-solid fa-trash"></i></button>
+                            <button type="button" class="btn btn-secondary UpVote" value="false"><i
+                                    class="fa-solid fa-thumbs-up"></i></button>
+                            <button type="button" class="btn btn-secondary DownVote" value="false"><i
+                                    class="fa-solid fa-thumbs-down"></i></button>
+                            <button type="button" class="btn btn-danger Delete"><i class="fa-solid fa-trash"></i>
+                            </button>
                         </div>
                     </div>
                 </div>

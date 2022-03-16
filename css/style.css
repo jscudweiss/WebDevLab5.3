@@ -1,22 +1,49 @@
 :root {
     /* CSS HEX */
-    --imperial-red: #e63946ff;
-    --honeydew: #f1faeeff;
-    --powder-blue: #a8dadcff;
-    --celadon-blue: #457b9dff;
-    --prussian-blue: #1d3557ff;
+    --pewter-blue: #6aa4d5;
+    --blue-munshell: #7dd4ff;
+    --background_blue: #fafeff;
+    --textYellow: #1a1300;
+
+
 }
 
-.even_car{
-    background-color: var(--honeydew)!important;
-    transition: background-color 0.5s ease;
-}
-.odd_car{
-    background-color: var(--powder-blue)!important;
+.even_car {
+    background-color: var(--blue-munshell) !important;
     transition: background-color 0.5s ease;
 }
 
-p{
+.odd_car {
+    background-color: var(--pewter-blue) !important;
+    transition: background-color 0.5s ease;
+}
+
+.text {
     font-family: 'Noto Sans', sans-serif;
-    color: var(--prussian-blue);
+    color: var(--textYellow);
+}
+
+
+html {
+    background-color: var(--background_blue);
+}
+
+#car_section {
+    background-color: var(--background_blue);
+}
+
+#carHead_section {
+    background-color: var(--background_blue);
+}
+
+#header_section {
+    background-color: var(--background_blue);
+}
+
+ul {
+    background-color: var(--background_blue);
+}
+
+#selection_section {
+    background-color: var(--background_blue);
 }

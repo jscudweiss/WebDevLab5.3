@@ -6,18 +6,8 @@ console.log(cars);
 let likeDislike = 0;
 const AnimSpeed = 500;
 
-function allCars() {
-    likeDislike = 0;
-    update_cars();
-}
-
-function likeCars() {
-    likeDislike = 1;
-    update_cars();
-}
-
-function dislikeCars() {
-    likeDislike = 2;
+function CheckBox(checkVal) {
+    likeDislike = checkVal;
     update_cars();
 }
 
@@ -30,34 +20,34 @@ function get_car_obj(car) {
                     <div class="card-body">
                         <div class="row">
                             <div class="col-6">
-                                <p>Make</p>
+                                <p class="text">Make</p>
                             </div>
                             <div class="col-6">
-                                <p class="make">${car.make}</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <p>Model</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="model">${car.model}</p>
+                                <p class="make text">${car.make}</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <p>Year</p>
+                                <p class="text">Model</p>
                             </div>
                             <div class="col-6">
-                                <p class="year">${car.year}</p>
+                                <p class="model text">${car.model}</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <p>Price</p>
+                                <p class="text">Year</p>
                             </div>
                             <div class="col-6">
-                                <p class="price">$${car.price}</p>
+                                <p class="year text">${car.year}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text">Price</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="price text">$${car.price}</p>
                             </div>
                         </div>
                     </div>
